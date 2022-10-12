@@ -23,4 +23,15 @@
     grid-column: 2 / 4;
     grid-row: 2 / 5;
   }
+  .project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__description {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      padding-left: 10px;
+      justify-content: space-evenly;
+    }
+  }
 }
