@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: "Montserrat";
+}
+
+img {
+  object-fit: contain;
+  border-radius: 10px;
+  width: 100%;
+}
+
+a,
+a:visited,
+a:active,
+a:focus {
+  color: #4f4f4f;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  width: 136.27px;
+  height: 40px;
+  padding: 5px 10px;
+  margin: 5px 0px;
+}
+
+.outline {
+  border: 1px solid #2f80ed;
+  color: #2f80ed;
+  background-color: white;
+}
+.fill {
+  color: white;
+  background: #2f80ed;
+}
+
+main {
+  margin: 4%;
+}
+
+main > * {
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 10px 15px 30px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 15px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+.material-symbols-outlined {
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+@import "introduction";
+@import "skills";
+@import "hobbies";
+@import "projects";

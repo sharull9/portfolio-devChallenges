@@ -1,0 +1,23 @@
+.skills {
+  .frontend {
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+    .frontend__tilte {
+      padding: 5px 0 15px;
+    }
+    .skill {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+}
