@@ -1,10 +1,14 @@
 @media (min-width: 400px) {
+  .material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 18px;
+  }
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
     align-items: start;
-    gap: 15px;
+    gap: 25px;
     margin: 2% 20%;
   }
   .introduction {
@@ -24,14 +28,27 @@
     grid-row: 2 / 5;
   }
   .project {
+    height: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     &__description {
       display: flex;
       flex-direction: column;
-      padding-top: 10px;
-      padding-left: 10px;
-      justify-content: space-evenly;
+      padding: 10px;
+      .tag {
+        flex: 0.2;
+      }
+      .title {
+        flex: 0.6;
+      }
+      .project-cta {
+        flex: 0.2;
+        display: flex;
+        gap: 5px;
+        a {
+          flex: 0.5;
+        }
+      }
     }
   }
 }

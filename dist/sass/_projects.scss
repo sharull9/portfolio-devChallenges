@@ -1,10 +1,46 @@
 .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   &__title {
+    padding: 10px 0px;
     h3 {
       font-weight: bold;
     }
   }
 }
 .project {
-  margin: 20px 0px;
+  height: 280px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  &__image {
+    flex: 0.65;
+    img {
+      object-fit: cover;
+    }
+  }
+  &__description {
+    padding: 5px;
+    flex: 0.35;
+    display: flex;
+    flex-direction: column;
+    .tag {
+      font-size: 12px;
+      flex: 0.2;
+    }
+    .title {
+      flex: 0.8;
+    }
+    .project-cta {
+      flex: 0.2;
+      display: flex;
+      column-gap: 5px;
+      a {
+        flex: 0.5;
+      }
+    }
+  }
 }
